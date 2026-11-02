@@ -1,0 +1,570 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #02060c;
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    background: #ff5200;
+    color: white;
+    padding: 0 5% 45px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: white;
+    color: #ff5200;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.app-btn {
+    border: 1px solid white;
+    padding: 13px 18px;
+    border-radius: 12px;
+}
+
+.signin-btn {
+    background: black;
+    padding: 14px 25px;
+    border-radius: 12px;
+}
+
+.menu {
+    display: none;
+    font-size: 27px;
+}
+
+/* HERO CONTENT */
+.hero-content {
+    text-align: center;
+    padding: 55px 0 25px;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+/* SEARCH BAR */
+.search-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.search-box {
+    background: white;
+    width: 320px;
+    height: 55px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 10px;
+    color: #555;
+}
+
+.search-box:nth-child(2) {
+    width: 420px;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    color: #333;
+}
+
+/* SIDE IMAGES */
+.side-img {
+    position: absolute;
+    top: 180px;
+    width: 150px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.left-img {
+    left: 20px;
+    transform: rotate(-7deg);
+}
+
+.right-img {
+    right: 20px;
+    transform: rotate(7deg);
+}
+
+/* SERVICE CARDS */
+.service-cards {
+    max-width: 1100px;
+    margin: 65px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background: white;
+    color: #282c3f;
+    border-radius: 20px;
+    padding: 22px;
+    min-height: 185px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card small {
+    color: #777;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.service-card h2 {
+    font-size: 20px;
+    margin: 12px 0;
+}
+
+.service-card p {
+    color: #ff5200;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.service-card button {
+    margin-top: 15px;
+    border: none;
+    background: #ff5200;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.service-card img {
+    width: 42%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 0 20px 60px;
+}
+
+.section {
+    margin-top: 65px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.arrows {
+    background: #eeeeef;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* ===== FOOD GRID ===== */
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 28px 20px;
+}
+
+.food-item {
+    text-align: center;
+    color: #3d4152;
+    font-weight: 600;
+}
+
+.food-item img {
+    width: 120px;
+    height: 120px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.food-item img:hover {
+    transform: scale(1.08);
+}
+
+.food-item p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* ===== GROCERY GRID ===== */
+.grocery-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.grocery-item {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #3d4152;
+}
+
+.grocery-item img {
+    width: 100%;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.grocery-item img:hover {
+    transform: translateY(-5px);
+}
+
+.grocery-item p {
+    margin-top: 10px;
+}
+
+/* ===== DINEOUT ===== */
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.restaurant-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+    padding-bottom: 15px;
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.restaurant-card h3 {
+    margin: 12px 15px 5px;
+    font-size: 17px;
+}
+
+.restaurant-card p {
+    margin: 0 15px;
+    color: #777;
+    font-size: 13px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #f0f0f5;
+    color: #3d4152;
+    padding: 50px 5% 0;
+}
+
+.footer-container {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+.footer-logo h2 {
+    color: #ff5200;
+    font-size: 25px;
+}
+
+.footer-logo p {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-column h3 {
+    color: #02060c;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    color: #686b78;
+    font-size: 13px;
+}
+
+.footer-column a:hover {
+    color: #ff5200;
+}
+
+.copyright {
+    border-top: 1px solid #d5d5da;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #777;
+}
+
+/* ===== TABLET RESPONSIVE ===== */
+@media (max-width: 1000px) {
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .side-img {
+        width: 100px;
+        height: 140px;
+        opacity: 0.8;
+    }
+
+    .service-cards {
+        gap: 12px;
+    }
+
+    .service-card {
+        padding: 15px;
+    }
+
+    .service-card h2 {
+        font-size: 17px;
+    }
+
+    .food-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grocery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 650px) {
+
+    .hero {
+        padding: 0 18px 35px;
+    }
+
+    .navbar {
+        height: 70px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .hero-content {
+        padding: 40px 0 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .search-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .search-box,
+    .search-box:nth-child(2) {
+        width: 100%;
+        height: 52px;
+    }
+
+    .side-img {
+        display: none;
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+
+    .service-card {
+        min-height: 150px;
+    }
+
+    .service-card img {
+        width: 40%;
+        height: 115px;
+    }
+
+    .container {
+        padding: 0 18px 40px;
+    }
+
+    .section {
+        margin-top: 45px;
+    }
+
+    .section-heading h2 {
+        font-size: 19px;
+    }
+
+    .arrows {
+        display: none;
+    }
+
+    .food-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px 12px;
+    }
+
+    .food-item img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .food-item p {
+        font-size: 12px;
+    }
+
+    .grocery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px 15px;
+    }
+
+    .grocery-item img {
+        height: 125px;
+    }
+
+    .grocery-item {
+        font-size: 12px;
+    }
+
+    .restaurant-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 15px;
+    }
+
+    .footer-logo {
+        grid-column: 1 / -1;
+    }
+
+    .copyright {
+        flex-direction: column;
+        gap: 12px;
+        line-height: 1.5;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 360px) {
+
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-heading h2 {
+        font-size: 17px;
+    }
+}
